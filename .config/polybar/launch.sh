@@ -7,7 +7,7 @@ killall -q polybar
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
 # Launch Polybar
-polybar top -c ~/.config/polybar/config.ini &
+polybar main -c ~/.config/polybar/config.ini &
 
 MONITOR = HDMI-A-0
 polybar external -c ~/.config/polybar/config.ini &

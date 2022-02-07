@@ -13,14 +13,14 @@ super + d
 # show open window
 super + ctrl + d
 	rofi -modi drun -show window -line-padding 4 \
-                -columns 2 -padding 50 -hide-scrollbar -terminal xfce4-terminal \
-                -show-icons -drun-icon-theme "Arc-X-D" -font "Droid Sans Regular 10"
+                -columns 2 -padding 50 -hide-scrollbar -terminal kitty \
+                -show-icons -drun-icon-theme "Tela dark" -font "CaskaydiaCove Nerd Font 10"
 
 # show ssh sesssions
 super + shift + d
 	rofi -modi drun -show ssh -line-padding 4 \
-                -columns 2 -padding 50 -hide-scrollbar -terminal xfce4-terminal \
-                -show-icons -drun-icon-theme "Arc-X-D" -font "Droid Sans Regular 10"
+                -columns 2 -padding 50 -hide-scrollbar -terminal kitty \
+                -show-icons -drun-icon-theme "Tela dark" -font "CaskaydiaCove Nerd Font 10"
 
 # power-menu 
 super + shift + e
@@ -174,10 +174,7 @@ super + w
   firefox
 
 super + n 
-  nemo  
-
-super + F1
-  ~/.config/bspwm/scripts/keybindings_rofi.sh
+  thunar
 
 super + shift + y
   ytfzf -D
