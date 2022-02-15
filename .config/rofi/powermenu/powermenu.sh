@@ -45,7 +45,7 @@ confirm_exit() {
 	rofi -dmenu\
 		-i\
 		-no-fixed-num-lines\
-		-p "Are You Sure? : "\
+		-p "Are You Sure? (y/n) : "\
 		-theme $dir/confirm.rasi
 }
 

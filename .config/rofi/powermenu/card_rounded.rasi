@@ -22,7 +22,7 @@ window {
     transparency:                   "real";
     background-color:               @background;
     text-color:                     @foreground;
-    border-radius:                  0px;
+    border-radius:                  12px;
     height:                         28.5%;
     width:                          50%;
     location:                       center;
@@ -33,33 +33,31 @@ window {
 prompt {
     enabled: 						true;
     padding:                        0.5% 0.5% 0.5% 0%;
-	background-color: 				@background-alt;
 	text-color: 					@foreground;
+	background-color:				@alphabackground;
 }
 
 textbox-prompt-colon {
 	expand: 						false;
 	str: 							"System |";
-	background-color: 				@background-alt;
 	text-color: 					@foreground;
+	background-color:				@alphabackground;
     padding:                        0.5% 0.5% 0.5% 0%;
 }
 
 inputbar {
 	children: 						[ textbox-prompt-colon, prompt ];
-    background-color:               @background-alt;
+    background-color:               @alphabackground;
     text-color:                     @foreground;
     expand:                         false;
-    border:                  		0.2% 0% 0.2% 0%;
     border-radius:                  12px;
-    border-color:                  	@border;
     margin:                         0% 21.3% 0% 0%;
     padding:                        0.5%;
     position:                       center;
 }
 
 listview {
-    background-color:               @background;
+    background-color:               @alphabackground;
     margin:                         0% 0% 0% 0%;
     spacing:                        2%;
     cycle:                          true;
@@ -68,14 +66,14 @@ listview {
 }
 
 mainbox {
-    background-color:               @background;
+    background-color:               @alphabackground;
     children:                       [ inputbar, listview ];
     spacing:                        3.5%;
     padding:                        4% 0% 0% 2%;
 }
 
 element {
-    background-color:               @background;
+    background-color:               @alphabackground;
     text-color:                     @foreground;
     orientation:                    horizontal;
     border-radius:                  25px;

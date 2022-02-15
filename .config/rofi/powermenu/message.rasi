@@ -3,7 +3,7 @@
 @import "styles/colors.rasi"
 
 * {
-    background-color:       @background;
+    background-color:       @alphabackground;
     text-color:             @foreground;
 	font:				 	"FantasqueSansMono Nerd Font 12";
 }
@@ -12,13 +12,13 @@ window {
     width:      			360px;
     padding:    			25px;
     border:					1px;
-    border-radius:          0px;
-    border-color:           @border;
+    border-radius:          12px;
     location:               center;
     y-offset:               -2em;
 }
 
 entry {
     expand: 				true;
-    text-color:				@border;
+    text-color:				@foreground;
+    background-color:		@alphabackground;
 }

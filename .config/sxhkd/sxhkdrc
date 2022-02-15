@@ -30,6 +30,10 @@ super + shift + e
 super + Escape
 	pkill -USR1 -x sxhkd
 
+# Lock the screen
+super + l
+	xflock4
+
 #
 # bspwm hotkeys
 #
@@ -135,32 +139,27 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
-#
-# Special hotkeys
-#
 
-# Multimedia keys
+##### Multimedia keys #####
 XF86AudioRaiseVolume
   pulsemixer --change-volume +5
 
-# Still multimedia
 XF86AudioLowerVolume
   pulsemixer --change-volume -5
 
-# still
 XF86AudioMute
   pulsemixer --toggle-mute
   
-# amixer -q set Master toggle
-# Simple amixer command seems to have problems unmuting device
-
-# Brightness up
+##### Brightness control #####
 XF86MonBrightnessUp
   brightnessctl s 5+
 
-# And brightness down
 XF86MonBrightnessDown
   brightnessctl s 5-
+
+##### Music controls #####
+super + shift + p
+	playerctl play-pause
 
 # Screenshot
 Print
