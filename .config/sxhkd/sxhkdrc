@@ -32,7 +32,7 @@ super + Escape
 
 # Lock the screen
 super + l
-	xflock4
+	~/.lock.sh
 
 #
 # bspwm hotkeys
